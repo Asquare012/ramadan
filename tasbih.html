@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <title>Tasbih</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            height: 700px;
+            width: 60vw;
+            border-radius: 30px;
+        }
+
+        #container div:first-child {
+            height: 30%;
+            background: url(tasbih-top.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 60px;
+            border-radius: 30px 30px 0 0;
+            color: #ffffff;
+            font-family: 'Kaushan Script', cursive;
+            text-shadow: 3px 3px 3px #000000;
+            padding-top: 30px;
+        }
+
+
+        #container div:first-child h2 {
+            font-size: 30px;
+            font-family: 'Patrick Hand', cursive;
+            letter-spacing: 2px;
+
+        }
+
+        #container div:last-child {
+            height: 70%;
+            width: 100%;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10%;
+            border-radius: 0 0 30px 30px;
+
+        }
+
+        #container div:last-child button {
+            cursor: pointer;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            color: azure;
+            font-family: 'Patrick Hand', cursive;
+            font-weight: 600;
+            text-shadow: 3px 3px 3px #000000;
+            box-shadow: 1px -2px 2px #ffffff;
+            letter-spacing: 1px;
+
+        }
+
+        #container div:last-child button:first-child {
+            background-color: #eb1111;
+            height: 100px;
+            width: 100px;
+            align-self: flex-end;
+            font-size: 20px;
+        }
+
+        #container div:last-child button:first-child:hover {
+            background-color: #c22929;
+        }
+
+        #container div:last-child button:first-child:active {
+            background-color: #680707;
+        }
+
+        #container div:last-child button:last-child {
+            height: 300px;
+            width: 300px;
+            font-size: 40px;
+            background-color: green;
+        }
+
+        #container div:last-child button:last-child:hover {
+            background-color: #1d971d;
+        }
+
+        #container div:last-child button:last-child:active {
+            background-color: #084d08;
+        }
+
+        /* media queries mobile*/
+        @media screen and (max-width:600px) {
+            #container {
+                width: 100vw;
+                height: 100vh;
+                border-radius: 0;
+            }
+
+            #container div:first-child {
+                border-radius: 0;
+            }
+
+            #container div:last-child {
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="screen">
+            <h2> TASBIH</h2>
+            <h1>0</h1>
+        </div>
+        <div id="control">
+            <button id="reset">RESET</button>
+            <button id="add">COUNT</button>
+        </div>
+    </div>
+    <script>
+        const screen = document.querySelector("h1");
+        const reset = document.querySelector("#reset");
+        const add = document.querySelector("#add");
+        let num = 1;
+        add.addEventListener("click", () => {
+            num++;
+            screen.innerHTML = num;
+        })
+
+        reset.addEventListener("click", () => {
+            num = 0
+            screen.innerHTML = num;
+        })
+    </script>
+</body>
+
+</html>
