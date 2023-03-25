@@ -1,0 +1,164 @@
+// colors
+$first: #cd74e4;
+$second: #1978f2;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    @include flex;
+}
+
+#container {
+    width: 70vh;
+    height: 100dvh;
+
+    #top {
+        height: 100%;
+        background-color: #595994;
+        text-align: center;
+        color: #ffffff;
+        @include flex;
+        flex-direction: column;
+
+        img {
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 50px 5%;
+            font-family: 'Patrick Hand', cursive;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 2px black;
+
+            #title {
+                font-size: 40px;
+                padding: 20px 0;
+                font-family: 'Kaushan Script', cursive;
+            }
+        }
+
+        button {
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 200px;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 17px;
+            box-shadow: 2px 2px 2px #494848;
+            background: linear-gradient(to right, $first, $second );
+            font-weight: 700;
+            margin-top: 20px;
+            cursor: pointer;
+            font-family: 'Patrick Hand', cursive;
+            letter-spacing: 1px;
+
+            &:hover {
+                box-shadow: 1px 1px 2px rgb(49, 48, 48);
+            }
+
+            &:active {
+                border: 2px solid #423c3c;
+            }
+        }
+    }
+
+    #bottom {
+        display: none;
+        height: 100vh;
+
+        #up {
+            height: 40%;
+            width: 100%;
+            background-color: #c67aec;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 30px;
+            font-style: italic;
+            background: url(top.jpg);
+            color: #ffffff;
+            @include flex;
+            flex-direction: column;
+            text-shadow: 3px 3px 3px black;
+            font-family: 'Kaushan Script', cursive;
+
+            #time {
+                font-size: 60px;
+
+            }
+        }
+
+        #down {
+            height: 60%;
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: #ebe8e3;
+
+
+            button {
+                height: 60%;
+                width: 70%;
+                margin: 5px;
+                background-color: rgb(74, 58, 87);
+                border-radius: 5px;
+                cursor: pointer;
+                @include flex;
+                flex-direction: column;
+                border: none;
+                outline: none;
+
+
+                &:hover {
+                    background-color: #095672;
+                }
+
+                &:active {
+                    background-color: #022735;
+                }
+
+                &:focus {
+                    background-color: #160e1d;
+                }
+
+                .imgBox {
+                    flex: 70%;
+                    @include flex;
+                }
+
+                h3 {
+                    width: 100%;
+                    @include flex;
+                    flex: 30%;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #ffffff;
+                }
+
+            }
+        }
+    }
+}
+
+// mobile view
+@media screen and (max-width:700px) {
+    #container {
+        width: 100vw;
+
+        #top {
+            background-size: cover;
+        }
+    }
+}
