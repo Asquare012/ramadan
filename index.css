@@ -13,7 +13,7 @@ body {
 
 #container {
   width: 70vh;
-  height: 100%;
+  height: 100dvh;
 }
 #container #top {
   height: 100%;
