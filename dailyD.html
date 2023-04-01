@@ -1,7 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head><!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Duas</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 5% 0 5%;
+            text-align: center;
+
+        }
+
+        #topImg {
+            display: none;
+            margin: 0 35px 50px 0;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+
+
+        }
+
+        #title {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+        }
+
+        #title #navigation {
+            height: 180px;
+            background-color: #f8f6f6;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            place-items: center;
+            padding-top: 15px;
+        }
+
+        #title #navigation div {
+            background-color: #ecda71;
+            height: 20px;
+            width: 30px;
+            cursor: pointer;
+            font-size: 15px;
+            display: grid;
+            place-items: center;
+        }
+
+        #title #navigation a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        #title #navigation div:hover {
+            background-color: #ac9720;
+            color: #ffffff;
+        }
+
+
+        #title #navigation div:active {
+            background-color: #c4a80b;
+            color: #ffffff;
+        }
+
+
+        #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        #container ul li {
+            list-style: none;
+            background-color: #e0e0de;
+            margin: 30px 0;
+            font-family: 'Kaushan Script', cursive;
+            padding: 10px;
+        }
+
+        #container ul li #number {
+            font-size: 50px;
+            color: #f8580e;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        #container ul li #arabic {
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 10px;
+        }
+
+        #container ul li #trans {
+            margin: 10px 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+
+        }
+
+        #container ul li .head {
+            color: #eb4d04;
+            font-weight: bold;
+            padding: 0 5px 0 2%;
+            font-size: small
+        }
+
+        #container ul li #english {
+            font-size: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#navigation"> <img src="top.png" alt="top" height="50px" id="topImg"></a>
+    <div id="title">
+        DAILY SUPPLICATIONS FOR THE MONTH OF RAMADAN
+        <br>
+        <div id="navigation">
+            <a href="#one">
+                <div>1</div>
+            </a>
+            <a href="#two">
+                <div>2</div>
+            </a>
+            <a href="#three">
+                <div>3</div>
+            </a>
+            <a href="#four">
+                <div>4</div>
+            </a>
+            <a href="#five">
+                <div>5</div>
+            </a>
+            <a href="#six">
+                <div>6</div>
+            </a>
+            <a href="#seven">
+                <div>7</div>
+            </a>
+            <a href="#eight">
+                <div>8</div>
+            </a>
+            <a href="#nine">
+                <div>9</div>
+            </a>
+            <a href="#ten">
+                <div>10</div>
+            </a>
+            <a href="#eleven">
+                <div>11</div>
+            </a>
+            <a href="#twelve">
+                <div>12</div>
+            </a>
+            <a href="#thirteen">
+                <div>13</div>
+            </a>
+            <a href="#fourteen">
+                <div>14</div>
+            </a>
+            <a href="#fifteen">
+                <div>15</div>
+            </a>
+            <a href="#sixteen">
+                <div>16</div>
+            </a>
+            <a href="#seventeen">
+                <div>17</div>
+            </a>
+            <a href="#eighteen">
+                <div>18</div>
+            </a>
+            <a href="#nineteen">
+                <div>19</div>
+            </a>
+            <a href="#twenty">
+                <div>20</div>
+            </a>
+            <a href="#twenty-one">
+                <div>21</div>
+            </a>
+            <a href="#twenty-two">
+                <div>22</div>
+            </a>
+            <a href="#twenty-three">
+                <div>23</div>
+            </a>
+            <a href="#twenty-four">
+                <div>24</div>
+            </a>
+            <a href="#twenty-five">
+                <div>25</div>
+            </a>
+            <a href="#twenty-six">
+                <div>26</div>
+            </a>
+            <a href="#twenty-seven">
+                <div>27</div>
+            </a>
+            <a href="#twenty-eight">
+                <div>28</div>
+            </a>
+            <a href="#twenty-nine">
+                <div>29</div>
+            </a>
+            <a href="#thirty">
+                <div>30</div>
+            </a>
+        </div>
+    </div>
+    <div id="container">
+        <ul>
+            <li id="one">
+                <h2 id="number">1</h2>
+                <div id="content">
+                    <div id="arabic">اَللّـهُمَّ اجْعَلْ صِيامي فيهِ صِيامَ الصّائِمينَ، وَقِيامي فيهِ قيامَ
+                        الْقائِمينَ، وَنَبِّهْني فيهِ عَنْ نَوْمَةِ الْغافِلينَ، وَهَبْ لى جُرْمي فيهِ يا اِلـهَ
+                        الْعالَمينَ، وَاعْفُ عَنّي يا عافِياً عَنْ الْمجْرِمينَ</div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊ ṣīāmīã fīhi ṣīāma ạlṣãạyỉmīna , waqīāmīuⁿ̃ fīhi qīāma ạl̊qāyỉmīna , wanabĩh̊nī
+                        fīhi ʿan̊ naẘmaẗi ạl̊gẖāfilīna , wahab̊ liy̱a jur̊mīuⁿ̃ fīhi yā ạilha ạl̊ʿạlamyna , wāuʿ̊fu
+                        ʿanīã yā ʿāfīaⁿạ ʿani ạl̊muj̊rimīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make my fast in it one of those who truly fast,
+                        my prayers those of who
+                        truly pray, and awaken me from the sleep of the inattentive, grant me forgiveness for my sins in
+                        it, O Lord of the Worlds, and do forgive me, O One Who forgives criminals</div>
+                </div>
+            </li>
+            <li id="two">
+                <h2 id="number">2</h2>
+                <div id="content">
+                    <div id="arabic">اَللّـهُمَّ اجْعَلْ صِيام اَللّـهُمَّ قَرِّبْني فيهِ اِلى مَرْضاتِكَ، وَجَنِّبْني
+                        فيهِ مِنْ سَخَطِكَ وَنَقِماتِكَ، وَوَفِّقْني فيهِ لِقِرآءَةِ آياتك بِرَحْمَتِكَ يا اَرْحَمَ
+                        الرّاحِمينَ</div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã qarĩb̊nī fīhi ạily̱ mar̊ḍạtika , wajanĩb̊nī fīhi min̊ sakẖaṭika wanaqimạtika ,
+                        wawafĩq̊nī fīhi liqirậʾaaẗi ậyạtk biraḥ̊matika yā ạar̊ḥama ạlrãạḥimīna
+                    </div>
+                    <div id="english"> <span class="head">TRANSLATION:</span> Lord! Bring me closer in it to Your
+                        pleasure, enable me in it to avoid Your anger
+                        and wrath, enable me to be in it to recite Your verses with Your mercy, O most merciful of those
+                        who have mercy!</div>
+                </div>
+            </li>
+            <li id="three">
+                <h2 id="number">3</h2>
+                <div id="content">
+                    <div id="arabic">اَللّـهُمَّ اجْعَلْ صِيااَللّـهُمَّ ارْزُقْني فيهِ الذِّهْنَ وَالتَّنْبيهَ ،
+                        وَباعِدْني فيهِ مِنَ السَّفاهَةِ وَالَّتمْويهِ ، وَاجْعَلْ لى نَصيباً مِنْ كُلِّ خَيْر تُنْزِلُ
+                        فيهِ، بِجُودِكَ يا أجود الاْجْوَدينَ </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạur̊zuq̊nī fīhi ạldẖĩh̊na wāltãn̊bīha , wabāʿid̊nī fīhi mina ạlsãfāhaẗi wālãtm̊wyhi ,
+                        wāij̊ʿal̊ liy̱a naṣībaⁿạ min̊ kulĩ kẖaẙri tun̊zilu fīhi , bijūdika yā ạảj̊wada ạlạ̊j̊wadyna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Grant me in it intelligence and attentiveness,
+                        distance me in it from
+                        nonsense and concealment, allot for me a portion of everything good which You send down in it
+                        with Your generosity, O most generous One!</div>
+                </div>
+            </li>
+
+            <li id="four">
+                <h2 id="number">4</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ قَوِّني فيهِ عَلى إقامة أمرك، وأذقني فيهِ حَلاوَةَ ذِكْرِكَ،
+                        وَاَوْزعْني فيهِ لاِداءِ شُكْرِكَ بِكَرَمِكَ، وَاحْفَظْني فيهِ بِحِفْظِكَ وَسَتْرِكَ، يا أبصر
+                        النّاظِرينَ </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã qawĩnãy fīhi ʿalay̱ ạ̹qāmaẗi ạảm̊rika , wāảdẖuq̊nī fīhi ḥalāawaẗa dẖik̊rika ,
+                        wāaẘzʿ̊ny fīhi lạidạʾi sẖuk̊rika bikaramika , wāiḥ̊faẓ̊nī fīhi biḥif̊ẓika wasat̊rika , yā
+                        ạảbaṣara ạlnãạẓirīna
+                    </div>
+                    <div id="english"> <span class="head">TRANSLATION:</span> Lord! Strengthen me in it to perform Your
+                        commands, enable me in it to taste the
+                        sweetness of mentioning Your Name, enable me in it to truly thank You with Your generosity, and
+                        safeguard me in it with Your safeguard and cover, O most seeing One!</div>
+                </div>
+            </li>
+            <li id="five">
+                <h2 id="number">5</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اجْعَلْني فيهِ مِنْ الْمُسْتَغْفِرينَ، وَاجْعَلْني فيهِ مِنْ عِبادِكَ
+                        الصّالِحينَ اْلقانِتينَ ، وَاجْعَلني فيهِ مِنْ اَوْلِيائِكَ الْمُقَرَّبينَ، بِرَأْفَتِكَ يا
+                        اَرْحَمَ الرّاحِمينَ </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊nī fīhi mina ạl̊mus̊tagẖ̊firīna , wāij̊ʿal̊nī fīhi min̊ ʿibādika ạlṣãạliḥīna
+                        ạl̊qānitīna , wāij̊ʿal̊nī fīhi mina ạaẘlīạyỉka ạl̊muqarãbīna , birā̊̉fatika yā ạar̊ḥama
+                        ạlrãạḥimīna
+                    </div>
+                    <div id="english"> <span class="head">TRANSLATION:</span> Lord! Enable me in it to be among those
+                        who
+                        seek Your forgiveness, make me in it
+                        among Your righteous and adoring servants, and enable me to be one of Your close friends through
+                        Your compassion, O most merciful One!</div>
+                </div>
+            </li>
+            <li id="six">
+                <h2 id="number">6</h2>
+                <div id="content">
+                    <div id="arabic"> اللّـهُمَّ لا تَخْذُلْني فيهِ لِتَعَرُّضِ مَعْصِيَتِكَ، وَلا تَضْرِبْني بِسِياطِ
+                        نَقِمَتِكَ، وَزَحْزِحْني فيهِ مِنْ مُوجِباتِ سَخَطِكَ ، بِمَنِّكَ وأياديك يا مُنْتَهى رَغْبَةِ
+                        الرّاغِبينَ </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã lā takẖ̊dẖul̊nī fīhi litaʿarũḍi maʿ̊ṣīatika , walā taḍ̊rib̊nī bisīāṭi naqimatika ,
+                        wazaḥ̊ziḥ̊nī fīhi min̊ mūjibāti sakẖaṭika , bimanĩka wāảyādīika yā mun̊tahay̱ ragẖ̊baẗi
+                        ạlrãạgẖibīna
+                    </div>
+                    <div id="english"> <span class="head">TRANSLATION:</span> Lord! Do not abandon me in it when I am
+                        exposed to transgressing Your limits, do
+                        not whip me with the whips of Your wrath, keep me away from whatever brings about Your anger
+                        with Your boons and assistance, O One Who is the ultimate end of the desirous</div>
+                </div>
+            </li>
+            <li id="seven">
+                <h2 id="number">7</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اَعِنّي فِيهِ عَلى صِيامِهِ وَقِيامِهِ، وَجَنِّبْني فيهِ مِنْ
+                        هَفَواتِهِ وَآثامِهِ، وَارْزُقْني فيهِ ذِكْرَكَ بِدَوامِهِ، بِتَوْفيقِكَ يا هادِيَ الْمُضِلّينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạaʿiñy fīhi ʿalay̱ ṣīāmihi waqīāmihi , wajanĩb̊nī fīhi min̊ hafawạtihi wā̂tẖāmihi ,
+                        wāur̊zuq̊nī fīhi dẖik̊raka bidawāmihi , bitaẘfīqika yā hādĩy ạl̊muḍilĩyna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Help me in it to fast and to pray as it is worth,
+                        help me avoid its slips and sins, and
+                        grant me in it to continuously remember You with Your enabling, O One Who guides those who
+                        stray!</div>
+                </div>
+            </li>
+            <li id="eight">
+                <h2 id="number">8</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ ارْزُقْني فيهِ رَحْمَةَ الأيتام، وإطعام اَلطَّعامِ، وإفشاء السَّلامِ،
+                        وَصُحْبَةَ الْكِرامِ، بِطَولِكَ يا ملجأ الآملين
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạur̊zuq̊nī fīhi raḥ̊maẗa ạl̊ạảẙtāmi , wāi̹ṭ̊ʿāma ạlṭãʿāmi , wā̹f̊sẖāʾa ạlsãlāami ,
+                        waṣuḥ̊baẗa ạl̊kirāmi , biṭaẘlika yā mal̊jāỉ ạlậmlyn
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Grant me in it mercy due to orphans, to be able
+                        to give away food, to disseminate the
+                        peace, to accompany the good ones through Your own favors, O haven of the hopeful!</div>
+                </div>
+            </li>
+            <li id="nine">
+                <h2 id="number">9</h2>
+                <div id="content">
+                    <div id="arabic"> اللّـهُمَّ اجْعَلْ لي فيهِ نَصيباً مِنْ رَحْمَتِكَ الْواسِعَةِ، وَاهْدِني فيهِ
+                        لِبَراهينِكَ السّاطِعَةِ، وَخُذْ بِناصِيَتي اِلى مَرْضاتِكَ الْجامِعَةِ، بِمَحَبَّتِكَ يا أمل
+                        الْمُشْتاقينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊ lī fīhi naṣībaⁿạ min̊ raḥ̊matika ạl̊wāsiʿaẗi , wāih̊dinãy fīhi libarāhīnika
+                        ạlsãạṭiʿaẗi , wakẖudẖ̊ bināṣīatī ạily̱ mar̊ḍạtika ạl̊jāmiʿaẗi , bimaḥabãtika yā ạảmali
+                        ạl̊musẖ̊tāqīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Allot for me in it a portion of Your spacious
+                        mercy, guide me in it to Your glittering
+                        proofs, take my forelock to whatever achieves Your collective Pleasure through Your love, O hope
+                        of the eager ones!</div>
+                </div>
+            </li>
+            <li id="ten">
+                <h2 id="number">10</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اجْعَلْني فيهِ مِنَ الْمُتَوَكِّلينَ عَلَيْكَ، وَاجْعَلْني فيهِ مِنَ
+                        الْفائِزينَ لَدَيْكَ، وَاجْعَلْني فيهِ مِنَ الْمُقَرَّبينَ اِلَيْكَ، بإحسانك يا غايَةَ
+                        الطّالِبينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊nī fīhi mina ạl̊mutawakĩlīna ʿalaẙka , wāij̊ʿal̊nī fīhi mina ạl̊fạyỉzyna
+                        ladaẙka
+                        , wāij̊ʿal̊nī fīhi mina ạl̊muqarãbīna ạlaẙka , biạ̹ḥ̊sānika yā gẖāyaẗa ạlṭãạlibīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make me in it among those who depend on You, make
+                        me in it among the winners, and make me
+                        in it
+                        among those who are close to You with Your kindness, O ultimate end of the seekers!</div>
+                </div>
+            </li>
+            <li id="eleven">
+                <h2 id="number">11</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ حَبِّبْ اِلَيَّ فيهِ الإحسان، وَكَرِّهْ اِلَيَّ فيهِ الْفُسُوقَ
+                        وَالْعِصْيانَ، وَحَرِّمْ عَلَيَّ فيهِ السَّخَطَ وَالنّيرانَ بِعَوْنِكَ يا غِياثَ الْمُسْتَغيثينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ḥabĩb̊ ạlay fīhi ạl̊ạ̹ḥ̊sāna , wakarĩh̊ ạlay fīhi ạl̊fusūqa wāl̊ʿiṣ̊yāna , waḥarĩm̊
+                        ʿalayã
+                        fīhi ạlsãkẖaṭa wālnĩyarāna biʿaẘnika yā gẖīātẖa ạl̊mus̊tagẖītẖīna Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quis consequuntur vero nulla quisquam
+                        soluta vel itaque voluptates veniam quod error!
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make me in it love benevolence, hate immorality
+                        and rebellion, and prohibit in it anger
+                        against me and the Fires with Your assistance, O One Who brings relief to those who plead for
+                        it!
+                    </div>
+                </div>
+            </li>
+            <li id="twelve">
+                <h2 id="number">12</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ زَيِّنّي فيهِ بِالسِّتْرِ وَالْعَفافِ، وَاسْتُرْني فيهِ بِلِباسِ
+                        الْقُنُوعِ وَالْكَفافِ،
+                        وَاحْمِلْني فيهِ عَلَى الْعَدْلِ والإنصاف، وَآمِنّي فيهِ مِنْ كُلِّ ما أخاف، بِعِصْمَتِكَ يا
+                        عِصْمَةَ
+                        الْخائِفينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION: ạllãhumã zayĩnī fīhi biạlsĩt̊ri wāl̊ʿafāfi , wāus̊tur̊nī
+                            fīhi bilibāsi ạl̊qunūʿi wāl̊kafāfi , wāiḥ̊mil̊nī fīhi ʿalay̱ ạl̊ʿad̊li wāl̊ại̹n̊ṣāfi ,
+                            wā̂miñy fīhi min̊ kulĩ mā ạảkẖāfiⁿ , biʿiṣ̊matika yā ʿiṣ̊maẗa ạl̊kẖāyỉfīna</span>
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Decorate me in it with a covering and with honors,
+                        shield me in it with the outfit of
+                        contentment and sufficiency, enable me in it to be just and fair, and bring me in it
+                        security
+                        against what I fear with Your protection, O Protector of the fearful!
+                    </div>
+                </div>
+            </li>
+            <li id="thirteen">
+                <h2 id="number">13</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ طَهِّرْني فيهِ مِنَ الدَّنَسِ والأقذار، وَصَبِّرْني فيهِ عَلى كائِناتِ
+                        الأقدار، وَوَفِّقْني فيهِ لِلتُّقى وَصُحْبَةِ الأبرار، بِعَوْنِكَ يا قُرَّةَ عَيْنِ الْمَساكينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ṭahĩr̊nī fīhi mina ạldãnasi wāl̊ạảq̊dẖāri , waṣabĩr̊nī fīhi ʿalay̱ kāyỉnāti ạl̊ạảq̊dāri
+                        , wawafĩq̊nī fīhi lil̊tuqay̱ waṣuḥ̊baẗi ạl̊ạảb̊rāri , biʿaẘnika yā qurãẗa ʿaẙni ạl̊masākīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Purify me in it from uncleanness and filth,
+                        enable me in it to be patient about whatever
+                        the fates bring, grant me success in it for righteousness and for the company of the kind ones
+                        with Your assistance, O apple of the eyes of the indigent!
+                    </div>
+                </div>
+            </li>
+            <li id="fourteen">
+                <h2 id="number">14</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ لا تُؤاخِذْني فيهِ بِالْعَثَراتِ، وَاَقِلْني فيهِ مِنَ الْخَطايا
+                        وَالْهَفَواتِ ، وَلا تَجْعَلْني فيهِ غَرَضاً لِلْبَلايا والآفات، بِعِزَّتِكَ يا عِزَّ
+                        الْمُسْلِمينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã lā tūảạkẖidẖ̊nī fīhi biạl̊ʿatẖarạti , wāaqil̊ny fīhi mina ạl̊kẖaṭāyā wāl̊hafawạti ,
+                        walā
+                        taj̊ʿal̊nī fīhi gẖaraḍaⁿạ lil̊balāyā wạlậfạt , biʿizãtika yā ʿizã ạl̊mus̊limīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Do not penalize me in it when I slip, protect me
+                        in it from sinning and slipping, and do
+                        not be an object to trials and tribulations with Your Dignity, O One Who safeguards the dignity
+                        of the Muslims!
+                    </div>
+                </div>
+            </li>
+            <li id="fifteen">
+                <h2 id="number">15</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ ارْزُقْني فيهِ طاعَةَ الْخاشِعينَ، وَاشْرَحْ فيهِ صَدْري بإنابة
+                        الْمخْبِتينَ، بأمانك يا أمان الْخائِفينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạur̊zuq̊nī fīhi ṭāʿaẗa ạl̊kẖāsẖiʿīna , wāisẖ̊raḥ̊ fīhi ṣad̊rīĩ biại̹nābaẗi
+                        ạl̊mukẖ̊bitīna , biạ̉mānika yā ạảmāniⁿ ạl̊kẖāyỉfīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Grant me in it the obedience of the devout,
+                        expand my chest in it with the return to You
+                        of those who abandoned You, through Your security, O One Who brings security to the fearful!
+                    </div>
+                </div>
+            </li>
+            <li id="sixteen">
+                <h2 id="number">16</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ وَفِّقْني فيهِ لِمُوافَقَةِ الأبرار، وَجَنِّبْني فيهِ مُرافَقَةَ
+                        الأشرار، وَآوِني فيهِ بِرَحْمَتِكَ اِلى دارِ الْقَـرارِ، بإلهيّتك يا اِلـهَ الْعالَمينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã wafĩq̊nī fīhi limūāfaqaẗi ạl̊ạảb̊rāri , wajanĩb̊nī fīhi murāfaqaẗa ạlạ̉sẖrạr , wā̂winãy
+                        fīhi biraḥ̊matika ạily̱ dāri ạl̊qarāri , biạ̹lahīãtika yā ạilha ạl̊ʿạlamyna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Grant me success in it to be in agreement with
+                        the kind ones, enable me in it to avoid the
+                        company of evildoers, enable me in it with Your mercy to be lodged in the abode of eternity with
+                        Your Godhead, O Lord of the Worlds!
+                    </div>
+                </div>
+            </li>
+            <li id="seventeen">
+                <h2 id="number">17</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اهْدِني فيهِ لِصالِحِ الإعمال، وَاقْضِ لي فيهِ الْحَوائِجَ والآمال، يا
+                        مَنْ لا يَحْتاجُ اِلَى التَّفْسيرِ وَالسُّؤالِ، يا عالِماً بِما في صُدُورِ الْعالَمينَ، صَلِّ
+                        عَلى مُحَمَّد وَآلِهِ الطّاهِرينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạih̊dinī fīhi liṣāliḥi ạl̊ạ̹ʿ̊māli , wāiq̊ḍi lī fīhi ạl̊ḥawāyỉja wāl̊ậmāla , yā man̊ lā
+                        yaḥ̊tāju ạilay̱ ạltãf̊sīri wālsũwảạli , yā ʿālimaⁿạ bimā fī ṣudūri ạl̊ʿạlamyna , ṣalĩ ʿalay̱
+                        muḥamãdi wā̂lihi ạlṭãạhirīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Grant me in it guidance to do good deeds, allot
+                        for me in it the fulfillment of needs and
+                        of
+                        aspirations, O One Who needs no explanation or queries, the One Who knows the innermost of the
+                        worlds, bless Muhammed and his pure Progeny!
+                    </div>
+                </div>
+            </li>
+            <li id="eighteen">
+                <h2 id="number">18</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ نَبِّهْني فيهِ لِبَرَكاتِ أسحاره، وَنَوِّرْ فيهِ قَلْبي بِضياءِ
+                        أنواره، وَخُذْ بِكُلِّ أعضائي اِلَى إتباع آثارِهِ، بِنُورِكَ يا مُنَوِّرَ قُلُوبِ الْعارِفينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã nabĩh̊nī fīhi libarakāti ạảs̊ḥārihi , wanawĩr̊ fīhi qal̊bīĩ biḍīāʾi ạản̊wārihi ,
+                        wakẖudẖ̊
+                        bikulĩ ạảʿ̊ḍāyỉyã ạilay̱ ạ̹tbạʿ ậtẖārihi , binūrika yā munawĩra qulūbi ạl̊ʿārifīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make me attentive in it to the blessings of his
+                        Sahar times, enlighten my heart in it with
+                        the light of its noors, make all my parts follow its tracks with Your own Noor, O One Who brings
+                        the noor (light) to the hearts of those who know You!
+                    </div>
+                </div>
+            </li>
+            <li id="nineteen">
+                <h2 id="number">19</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ افْتَحْ لي فيهِ أبواب الْجِنانِ، وأغلق عَنّي فيهِ أبواب النّيرانِ،
+                        وَوَفِّقْني فيهِ لِتِلاوَةِ الْقُرْآنِ، يا مُنْزِلَ السَّكينَةِ فى قُلُوبِ الْمُؤْمِنينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạif̊taḥ̊ lī fīhi ạảbawãạba ạl̊jinãạni , wāảgẖ̊laqa ʿanīuⁿ̃ fīhi ạảbawãạba ạlnĩyarāni ,
+                        wawafĩq̊nī fīhi litilāwaẗi ạl̊qur̊ậni , yā mun̊zila ạlsãkīnaẗi fiy̱ã qulūbi ạl̊mū̊̉minīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Open for me in it the gates of the gardens, close
+                        from me in it the gates of the fires,
+                        enable me in
+                        it to recite the Qur’an, O One Who sends down calm to the hearts of the faithful!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty">
+                <h2 id="number">20</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اجْعَلْ لى فيهِ اِلى مَرْضاتِكَ دَليلاً، وَلا تَجْعَلْ لِلشَّيْطانِ
+                        فيهِ عَلَيَّ سَبيلاً، وَاجْعَلِ الْجَنَّةَ لى مَنْزِلاً وَمَقيلاً، يا قاضِيَ حَوائِجِ
+                        الطّالِبينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊ liy̱a fīhi ạily̱ mar̊ḍạtika dalylaⁿạ , walā taj̊ʿal̊ lilsẖãẙṭāni fīhi ʿalayã
+                        sabīlaⁿạ , wāj̊ʿali ạl̊janãẗa liy̱a man̊zilaⁿạ wamaqīlaⁿạ , yā qāḍī ḥawāyỉji ạlṭãạlibīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Guide me in it to earn Your Pleasure, do not let
+                        Satan find in it his way to me, and let
+                        Paradise be my home and eternal abode, O One Who fulfills the needs of those who plead!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-one">
+                <h2 id="number">21</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ افْتَحْ لى فيهِ أبواب فَضْلِكَ، وَاَنْزِلْ عَلَيَّ فيهِ بَرَكاتِكَ،
+                        وَوَفِّقْني فيهِ لِمُوجِباتِ مَرْضاتِكَ، وَاَسْكِنّي فيهِ بُحْبُوحاتِ جَنّاتِكَ، يا مُجيبَ
+                        دَعْوَةِ الْمُضْطَرّينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạif̊taḥ̊ liy̱a fīhi ạảbawãạba faḍ̊lika , wāan̊zil̊ ʿalayã fīhi barakātika , wawafĩq̊nī
+                        fīhi limūjibāti
+                        mar̊ḍạtika , wāas̊kiñy fīhi buḥ̊būḥāti janãạtika , yā mujība daʿ̊waẗi ạl̊muḍ̊ṭarĩyna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Open for me in it the gates of Your favor, send
+                        down to me in it Your blessings, enable me
+                        in it to earn whatever brings about Your Pleasure, house me in it in the opulence of Your
+                        gardens, O One Who responds to the call of the compelled ones!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-two">
+                <h2 id="number">22</h2>
+                <div id="content">
+                    <div id="arabic">اَللّـهُمَّ اغْسِلْني فيهِ مِنَ الذُّنُوبِ، وَطَهِّرْني فيهِ مِنَ الْعُيُوبِ،
+                        وَامْتَحِنْ قَلْبي فيهِ بِتَقْوَى الْقُلُوبِ، يا مُقيلَ عَثَراتِ الْمُذْنِبينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạigẖ̊sil̊nī fīhi mina ạldẖũnūbi , waṭahĩr̊nī fīhi mina ạl̊ʿuyūbi , wāim̊taḥin̊ qal̊bīã
+                        fīhi bitaq̊way̱ ạl̊qulūbi , yā muqyla ʿatẖarạti ạl̊mudẖ̊nibīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Wash my sins away in it, purify me from defects,
+                        ascertain my heart in it with the piety
+                        of
+                        the hearts, O One Who corrects the slips of the sinners!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-three">
+                <h2 id="number">23</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ إني أسألك فيهِ ما يُرْضيكَ، وأعوذ بِكَ مِمّا يُؤْذيكَ، وأسألك
+                        التَّوْفيقَ فيهِ لاِنْ أطيعك وَلا أعصيك، يا جَوادَ السّائِلينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạ̹n̊y ạảsāảlaka fīhi mā yur̊ḍīka , wāảʿūdẖu bika mimãạ yū̊̉dẖīka , wāảs̊ạảluka
+                        ạltãẘfīqa
+                        fīhi lạin̊ ạủṭīʿuka walā ạảʿ̊ṣīka , yā jawãạda ạlsãạyỉlīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! I plead to You to enable me to achieve whatever
+                        pleases You, I seek refuge with You from
+                        whatever offends You, and I plead to You to grant me the ability to obey You and not to disobey,
+                        O
+                        most Generous One of all those to whom pleas are made!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-four">
+                <h2 id="number">24</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اجْعَلْني فيهِ مُحِبَّاً لأوليائك، وَمُعادِياً لأعدائك، مُسْتَنّاً
+                        بِسُنَّةِ خاتَمِ أنبيائك، يا عاصِمَ قُلُوبِ النَّبِيّينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊nī fīhi muḥibãạ lạ̉wlyạỷk , wamuʿādyạ lạ̉ʿ̊dāyỉk , mus̊tañạaⁿ bisunãẗi kẖạtami
+                        ạ̉nbyạỷk , yā ʿāṣima qulūbi ạlnãbīĩyna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make me in it one who loves Your friends, who is
+                        hostile to Your foes, following the
+                        Sunnah
+                        of the Seal of Your Prophets, O One Who protects the prophets’ hearts!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-five">
+                <h2 id="number">25</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اجْعَلْ سَعْيي فيهِ مَشْكُوراً، وَذَنْبي فيهِ مَغْفُوراً وَعَمَلي فيهِ
+                        مَقْبُولاً، وَعَيْبي فيهِ مَسْتُوراً، يا اَسْمَعَ السّامِعينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊ saʿ̊yy fīhi masẖ̊kūraⁿạ , wadẖan̊bīuⁿ̃ fīhi magẖ̊fūraⁿạ waʿamalīã fīhi
+                        maq̊būlaⁿạ
+                        , waʿaẙbīuⁿ̃ fīhi mas̊tūraⁿạ , yā ạas̊maʿa ạlsãạmiʿīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make my endeavor in it appreciated (by You), my
+                        sin it forgiven, my deed in it accepted,
+                        my
+                        defect in it covered, O most hearing of those who hear (pleas)!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-six">
+                <h2 id="number">26</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ ارْزُقْني فيهِ فَضْلَ لَيْلَةِ الْقَدْرِ، وَصَيِّرْ أموري فيهِ مِنَ
+                        الْعُسْرِ إلى الْيُسْرِ، وَاقْبَلْ مَعاذيري، وَحُطَّ عَنّيِ الذَّنْبَ وَالْوِزْرَ، يا رَؤوفاً
+                        بِعِبادِهِ الصّالِحينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạur̊zuq̊nī fīhi faḍ̊la laẙlaẗi ạl̊qad̊ri , waṣayĩr̊ ạủmūrīã fīhi mina ạl̊ʿus̊ri ại̹lay̱
+                        ạl̊yus̊ri , wāiq̊bal̊ maʿādẖīray , waḥuṭã ʿanĩy ạldẖãn̊ba wāl̊wiz̊ra , yā rawủwfaⁿạ biʿibādihi
+                        ạlṣãạliḥīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Grant me in it the honor of Laylatul-Qadr, change
+                        my affairs in it from hardship to ease,
+                        accept my excuses, remove from the sin and its burden, O One Who is affectionate towards His
+                        righteous servants!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-seven">
+                <h2 id="number">27</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ وَفِّرْ حَظّي فيهِ مِنَ النَّوافِلِ، وأكرمني فيهِ بإحضار الْمَسائِلِ،
+                        وَقَرِّبْ فيهِ وسيلتي إليك مِنْ بَيْنِ الْوَسائِلِ، يا مَنْ لا يَشْغَلُهُ إلحاح الْمُلِحّينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã wafĩr̊ ḥaẓĩyã fīhi mina ạlnãwāfili , wāủkarĩmunī fīhi biạ̹ḥ̊ḍāri ạl̊masāyỉli , waqarĩb̊
+                        fīhi
+                        wasayãl̊tī ại̹laẙka min̊ baẙni ạl̊wasāyỉli , yā man̊ lā yasẖ̊gẖaluhu ạ̹l̊ḥāḥu ạl̊muliḥ̃yna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make my lot of Nafl (supererogatory) deeds in it
+                        abundant, honor me in it with the
+                        presence of
+                        pleas, bring my means towards You closer from among all means, O One Who is not distracted by
+                        the
+                        persistence of those who persist!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-eight">
+                <h2 id="number">28</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ غَشِّني فيهِ بِالرَّحْمَةِ ، وَارْزُقْني فيهِ التَّوْفيقَ
+                        وَالْعِصْمَةَ ، وَطَهِّرْ قَلْبي مِنْ غَياهِبِ التُّهْمَةِ ، يا رَحيماً بِعِبادِهِ الْمُؤْمِنينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã gẖasẖĩnãy fīhi biạlrãḥ̊maẗi , wāur̊zuq̊nī fīhi ạltãẘfīqa wāl̊ʿiṣ̊maẗa , waṭahĩr̊
+                        qal̊bay
+                        min̊ gẖayāhibi ạltũh̊maẗi , yā raḥīmaⁿạ biʿibādihi ạl̊mū̊̉minīna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Overwhelm me in it with (Your) mercy, grant me in
+                        it success and protection, purge my
+                        heart of the
+                        depths of accusation, O most Merciful One of His believing servants!
+                    </div>
+                </div>
+            </li>
+            <li id="twenty-nine">
+                <h2 id="number">29</h2>
+                <div id="content">
+                    <div id="arabic"> اَللّـهُمَّ اجْعَلْ صِيامى فيهِ بِالشُّكْرِ وَالْقَبُولِ عَلى ما تَرْضاهُ
+                        وَيَرْضاهُ الرَّسُولُ، مُحْكَمَةً فُرُوعُهُ بِالاْصُولِ، بِحَقِّ سَيِّدِنا مُحَمَّد وَآلِهِ
+                        الطّاهِرينَ، وَالْحَمْدُ للهِ رَبِّ الْعالَمينَ
+                    </div>
+                    <div id="trans">
+                        <span class="head">TRANSLITERATION:</span>
+                        ạllãhumã ạij̊ʿal̊ ṣīạmy̱ fīhi biạlsẖũk̊ri wāl̊qabūli ʿalay̱ mā tar̊ḍāhu wayar̊ḍāhu ạlrãsūlu ,
+                        muḥ̊kamaẗaⁿ furūʿuhu biạlạ̊ṣūli , biḥaqĩ sayĩdinā muḥamãda wā̂lihi ạlṭãạhirīna , wāl̊ḥam̊du llhi
+                        rabĩ ạl̊ʿạlamyna
+                    </div>
+                    <div id="english">
+                        <span class="head">TRANSLATION:</span> Lord! Make my fast in it a means to thanking You and to
+                        accepting what You accept and what the
+                        Messenger () accepts, its branches perfected through its principles, by the right of our Master
+                        Muhammed and his Pure Progeny, and all praise belongs to Allah, Lord of the Worlds.
+                    </div>
+                </div>
+            </li>
+            <li>CREDIT: <a href="http://www.duas.org/ramazan/Ramadhan30.htm">www.duas.org</a></li>
+        </ul>
+    </div>
+    <script>
+        const topImg = document.querySelector("#topImg");
+        window.onscroll = function () {
+            myscroll()
+        }
+
+        function myscroll() {
+            if (document.body.scrollTop || document.documentElement.scrollTop > 600) {
+                topImg.style.display = "block"
+            } else {
+                topImg.style.display = "none"
+            }
+        }
+    </script>
+</body>
+
+</html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
